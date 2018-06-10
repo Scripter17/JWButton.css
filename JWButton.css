@@ -16,6 +16,9 @@
 .JWButton:not(.JWButton-Nwidth){width:100%;}
 .JWButton:focus{outline:none;}
 .JWButton:hover{box-shadow:-8px 8px 2px rgba(63,63,63,0.3);}
+
+
+/* Normal, .Hover:hover*/
 .JWButton.JWButton-Red, .JWButton.JWButton-Hover-Red:hover               {background-color:#FF0000; color:#FFFFFF;}
 .JWButton.JWButton-Orange, .JWButton.JWButton-Hover-Orange:hover         {background-color:#FFA500; color:#FFFFFF;}
 .JWButton.JWButton-Yellow, .JWButton.JWButton-Hover-Yellow:hover         {background-color:#FFFF00; color:#000000;}
@@ -35,38 +38,86 @@
 .JWButton.JWButton-Light-Gray, .JWButton.JWButton-Hover-Light-Gray:hover {background-color:#D0D0D0; color:#000000;}
 .JWButton.JWButton-White, .JWButton.JWButton-Hover-White:hover           {background-color:#FFFFFF; color:#000000;}
 
-.JWButton.JWButton-Red:not(.JWButton-Nactive):active                     {background-color:#BF0000;}
-.JWButton.JWButton-Hover-Red:not(.JWButton-Nactive):hover:active         {background-color:#BF0000 !important;}
-.JWButton.JWButton-Orange:not(.JWButton-Nactive):active                  {background-color:#BF7B00;}
-.JWButton.JWButton-Hover-Orange:not(.JWButton-Nactive):hover:active      {background-color:#BF7B00 !important;}
-.JWButton.JWButton-Yellow:not(.JWButton-Nactive):active                  {background-color:#BFBF00;}
-.JWButton.JWButton-Hover-Yellow:not(.JWButton-Nactive):hover:active      {background-color:#BFBF00 !important;}
-.JWButton.JWButton-Green:not(.JWButton-Nactive):active                   {background-color:#006000;}
-.JWButton.JWButton-Hover-Green:not(.JWButton-Nactive):hover:active       {background-color:#006000 !important;}
-.JWButton.JWButton-Blue:not(.JWButton-Nactive):active                    {background-color:#0000BF;}
-.JWButton.JWButton-Hover-Blue:not(.JWButton-Nactive):hover:active        {background-color:#0000BF !important;}
-.JWButton.JWButton-Indigo:not(.JWButton-Nactive):active                  {background-color:#6400AD;}
-.JWButton.JWButton-Hover-Indigo:not(.JWButton-Nactive):hover:active      {background-color:#6400AD !important;}
-.JWButton.JWButton-Violet:not(.JWButton-Nactive):active                  {background-color:#B261B2;}
-.JWButton.JWButton-Hover-Violet:not(.JWButton-Nactive):hover:active      {background-color:#B261B2 !important;}
-.JWButton.JWButton-Purple:not(.JWButton-Nactive):active                  {background-color:#600060;}
-.JWButton.JWButton-Hover-Purple:not(.JWButton-Nactive):hover:active      {background-color:#600060 !important;}
-.JWButton.JWButton-Brown:not(.JWButton-Nactive):active                   {background-color:#7B1F1F;}
-.JWButton.JWButton-Hover-Brown:not(.JWButton-Nactive):hover:active       {background-color:#7B1F1F !important;}
 
-.JWButton.JWButton-Black:not(.JWButton-Nactive):active                   {background-color:#000000;}
-.JWButton.JWButton-Hover-Black:not(.JWButton-Nactive):hover:active       {background-color:#000000 !important;}
-.JWButton.JWButton-Dark-Grey:not(.JWButton-Nactive):active               {background-color:#6A6A6A;}
-.JWButton.JWButton-Hover-Dark-Grey:not(.JWButton-Nactive):hover:active   {background-color:#6A6A6A !important;}
-.JWButton.JWButton-Grey:not(.JWButton-Nactive):active                    {background-color:#606060;}
-.JWButton.JWButton-Hover-Grey:not(.JWButton-Nactive):hover:active        {background-color:#606060 !important;}
-.JWButton.JWButton-Light-Grey:not(.JWButton-Nactive):active              {background-color:#9C9C9C;}
-.JWButton.JWButton-Hover-Light-Grey:not(.JWButton-Nactive):hover:active  {background-color:#9C9C9C !important;}
-.JWButton.JWButton-Dark-Gray:not(.JWButton-Nactive):active               {background-color:#6A6A6A;}
-.JWButton.JWButton-Hover-Dark-Gray:not(.JWButton-Nactive):hover:active   {background-color:#6A6A6A !important;}
-.JWButton.JWButton-Gray:not(.JWButton-Nactive):active                    {background-color:#606060;}
-.JWButton.JWButton-Hover-Gray:not(.JWButton-Nactive):hover:active        {background-color:#606060 !important;}
-.JWButton.JWButton-Light-Gray:not(.JWButton-Nactive):active              {background-color:#9C9C9C;}
-.JWButton.JWButton-Hover-Light-Gray:not(.JWButton-Nactive):hover:active  {background-color:#9C9C9C !important;}
-.JWButton.JWButton-White:not(.JWButton-Nactive):active                   {background-color:#BFBFBF;}
-.JWButton.JWButton-Hover-White:not(.JWButton-Nactive):hover:active       {background-color:#BFBFBF !important;}
+/* :not(.Nactive):Active */
+.JWButton.JWButton-Red:not(.JWButton-Nactive):active                     {background-color:#BF0000; color:#FFFFFF;}
+.JWButton.JWButton-Orange:not(.JWButton-Nactive):active                  {background-color:#BF7B00; color:#FFFFFF;}
+.JWButton.JWButton-Yellow:not(.JWButton-Nactive):active                  {background-color:#BFBF00; color:#000000;}
+.JWButton.JWButton-Green:not(.JWButton-Nactive):active                   {background-color:#006000; color:#FFFFFF;}
+.JWButton.JWButton-Blue:not(.JWButton-Nactive):active                    {background-color:#0000BF; color:#FFFFFF;}
+.JWButton.JWButton-Indigo:not(.JWButton-Nactive):active                  {background-color:#6400AD; color:#FFFFFF;}
+.JWButton.JWButton-Violet:not(.JWButton-Nactive):active                  {background-color:#B261B2; color:#000000;}
+.JWButton.JWButton-Purple:not(.JWButton-Nactive):active                  {background-color:#600060; color:#FFFFFF;}
+.JWButton.JWButton-Brown:not(.JWButton-Nactive):active                   {background-color:#7B1F1F; color:#FFFFFF;}
+
+.JWButton.JWButton-Black:not(.JWButton-Nactive):active                   {background-color:#000000; color:#FFFFFF;}
+.JWButton.JWButton-Dark-Grey:not(.JWButton-Nactive):active               {background-color:#6A6A6A; color:#FFFFFF;}
+.JWButton.JWButton-Grey:not(.JWButton-Nactive):active                    {background-color:#606060; color:#FFFFFF;}
+.JWButton.JWButton-Light-Grey:not(.JWButton-Nactive):active              {background-color:#9C9C9C; color:#000000;}
+.JWButton.JWButton-Dark-Gray:not(.JWButton-Nactive):active               {background-color:#6A6A6A; color:#FFFFFF;}
+.JWButton.JWButton-Gray:not(.JWButton-Nactive):active                    {background-color:#606060; color:#FFFFFF;}
+.JWButton.JWButton-Light-Gray:not(.JWButton-Nactive):active              {background-color:#9C9C9C; color:#000000;}
+.JWButton.JWButton-White:not(.JWButton-Nactive):active                   {background-color:#BFBFBF; color:#000000;}
+
+
+/* .Hover:not(.Nactive):Hover:Active */
+.JWButton.JWButton-Hover-Red:not(.JWButton-Nactive):hover:active         {background-color:#BF0000; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Orange:not(.JWButton-Nactive):hover:active      {background-color:#BF7B00; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Yellow:not(.JWButton-Nactive):hover:active      {background-color:#BFBF00; color:#000000;}
+.JWButton.JWButton-Hover-Green:not(.JWButton-Nactive):hover:active       {background-color:#006000; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Blue:not(.JWButton-Nactive):hover:active        {background-color:#0000BF; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Indigo:not(.JWButton-Nactive):hover:active      {background-color:#6400AD; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Violet:not(.JWButton-Nactive):hover:active      {background-color:#B261B2; color:#000000;}
+.JWButton.JWButton-Hover-Purple:not(.JWButton-Nactive):hover:active      {background-color:#600060; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Brown:not(.JWButton-Nactive):hover:active       {background-color:#7B1F1F; color:#FFFFFF;}
+
+.JWButton.JWButton-Hover-Black:not(.JWButton-Nactive):hover:active       {background-color:#000000; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Dark-Grey:not(.JWButton-Nactive):hover:active   {background-color:#6A6A6A; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Grey:not(.JWButton-Nactive):hover:active        {background-color:#606060; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Light-Grey:not(.JWButton-Nactive):hover:active  {background-color:#9C9C9C; color:#000000;}
+.JWButton.JWButton-Hover-Dark-Gray:not(.JWButton-Nactive):hover:active   {background-color:#6A6A6A; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Gray:not(.JWButton-Nactive):hover:active        {background-color:#606060; color:#FFFFFF;}
+.JWButton.JWButton-Hover-Light-Gray:not(.JWButton-Nactive):hover:active  {background-color:#9C9C9C; color:#000000;}
+.JWButton.JWButton-Hover-White:not(.JWButton-Nactive):hover:active       {background-color:#BFBFBF; color:#000000;}
+
+
+/* .Active:not(.Nactive):active   (I'm so sorry for using !important, if I didn't have to deal with specificity, I wouldn't.)*/
+.JWButton.JWButton-Active-Red:not(.JWButton-Nactive):active              {background-color:#BF0000 !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Orange:not(.JWButton-Nactive):active           {background-color:#BF7B00 !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Yellow:not(.JWButton-Nactive):active           {background-color:#BFBF00 !important; color:#000000 !important;}
+.JWButton.JWButton-Active-Green:not(.JWButton-Nactive):active            {background-color:#006000 !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Blue:not(.JWButton-Nactive):active             {background-color:#0000BF !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Indigo:not(.JWButton-Nactive):active           {background-color:#6400AD !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Violet:not(.JWButton-Nactive):active           {background-color:#B261B2 !important; color:#000000 !important;}
+.JWButton.JWButton-Active-Purple:not(.JWButton-Nactive):active           {background-color:#600060 !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Brown:not(.JWButton-Nactive):active            {background-color:#7B1F1F !important; color:#FFFFFF !important;}
+
+.JWButton.JWButton-Active-Black:not(.JWButton-Nactive):active            {background-color:#000000 !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Dark-Grey:not(.JWButton-Nactive):active        {background-color:#6A6A6A !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Grey:not(.JWButton-Nactive):active             {background-color:#606060 !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Light-Grey:not(.JWButton-Nactive):active       {background-color:#9C9C9C !important; color:#000000 !important;}
+.JWButton.JWButton-Active-Dark-Gray:not(.JWButton-Nactive):active        {background-color:#6A6A6A !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Gray:not(.JWButton-Nactive):active             {background-color:#606060 !important; color:#FFFFFF !important;}
+.JWButton.JWButton-Active-Light-Gray:not(.JWButton-Nactive):active       {background-color:#9C9C9C !important; color:#000000 !important;}
+.JWButton.JWButton-Active-White:not(.JWButton-Nactive):active            {background-color:#BFBFBF !important; color:#000000 !important;}
+
+
+/* .Active.Nactive:active */
+.JWButton.JWButton-Active-Red.JWButton-Nactive:active                    {background-color:#FF0000; color:#FFFFFF;}
+.JWButton.JWButton-Active-Orange.JWButton-Nactive:active                 {background-color:#FFA500; color:#FFFFFF;}
+.JWButton.JWButton-Active-Yellow.JWButton-Nactive:active                 {background-color:#FFFF00; color:#000000;}
+.JWButton.JWButton-Active-Green.JWButton-Nactive:active                  {background-color:#008000; color:#FFFFFF;}
+.JWButton.JWButton-Active-Blue.JWButton-Nactive:active                   {background-color:#0000FF; color:#FFFFFF;}
+.JWButton.JWButton-Active-Indigo.JWButton-Nactive:active                 {background-color:#4B0082; color:#FFFFFF;}
+.JWButton.JWButton-Active-Violet.JWButton-Nactive:active                 {background-color:#EE82EE; color:#000000;}
+.JWButton.JWButton-Active-Purple.JWButton-Nactive:active                 {background-color:#800080; color:#FFFFFF;}
+.JWButton.JWButton-Active-Brown.JWButton-Nactive:active                  {background-color:#A52A2A; color:#FFFFFF;}
+
+.JWButton.JWButton-Active-Black.JWButton-Nactive:active                  {background-color:#000000; color:#FFFFFF;}
+.JWButton.JWButton-Active-Dark-Grey.JWButton-Nactive:active              {background-color:#505050; color:#FFFFFF;}
+.JWButton.JWButton-Active-Grey.JWButton-Nactive:active                   {background-color:#808080; color:#FFFFFF;}
+.JWButton.JWButton-Active-Light-Grey.JWButton-Nactive:active             {background-color:#D0D0D0; color:#000000;}
+.JWButton.JWButton-Active-Dark-Gray.JWButton-Nactive:active              {background-color:#505050; color:#FFFFFF;}
+.JWButton.JWButton-Active-Gray.JWButton-Nactive:active                   {background-color:#808080; color:#FFFFFF;}
+.JWButton.JWButton-Active-Light-Gray.JWButton-Nactive:active             {background-color:#D0D0D0; color:#000000;}
+.JWButton.JWButton-Active-White.JWButton-Nactive:active                  {background-color:#FFFFFF; color:#000000;}
