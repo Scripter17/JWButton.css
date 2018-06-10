@@ -4,17 +4,25 @@
 <link rel="stylesheet" type="text/css" href="JWButton.css">
 <style>
 body{text-align:center;}
-td{padding:1em;}
-table, th, td{border:1px solid black; text-align:left;}
 table{margin:auto;}
+table, th, td{border:1px solid black; text-align:left;}
+th{text-align:center;}
+td{padding:1em;}
 </style>
 <script>
 function f(){
 	var m=document.querySelector("input[name=Main]:checked").value;
 	var h=document.querySelector("input[name=Hover]:checked").value;
-	var w=document.getElementById("Nwidth").checked;
-	var a=document.getElementById("Nactive").checked;
-	var c="JWButton"+(m!="Null"?" JWButton-"+m:"")+(h!="Null"?" JWButton-Hover-"+h:"")+(w?"":" JWButton-Nwidth")+(a?"":" JWButton-Nactive");
+	var a=document.querySelector("input[name=Active]:checked").value;
+	var W=document.getElementById("Nwidth").checked;
+	var A=document.getElementById("Nactive").checked;
+	var c="JWButton"
+	if (m!="Null"){c+=" JWButton-"+m}
+	if (h!="Null"){c+=" JWButton-Hover-"+h}
+	if (a!="Null"){c+=" JWButton-Active-"+a}
+	if (!W){c+=" JWButton-Nwidth"}
+	if (!A){c+=" JWButton-Nactive"}
+	
 	document.getElementById("Result").setAttribute("class", c);
 	document.getElementById("Class").innerHTML=c;
 }
@@ -33,6 +41,11 @@ window.onload=function(){
 <body>
 <table>
 <tr>
+<th>Normal</th>
+<th>Hover</th>
+<th>Active</th>
+</tr>
+<tr>
 <td>
 <label><input type="radio" name="Main" value="Null" checked="true"></input>Null</label><br/>
 <label><input type="radio" name="Main" value="Red"></input>Red</label><br/>
@@ -41,7 +54,7 @@ window.onload=function(){
 <label><input type="radio" name="Main" value="Green"></input>Green</label><br/>
 <label><label><input type="radio" name="Main" value="Blue"></input>Blue</label><br/>
 <label><input type="radio" name="Main" value="Indigo"></input>Indigo</label><br/>
-<label title="Actually pink, but the standard says this is violet."><input type="radio" name="Main" value="Violet"></input>Violet</label><br/>
+<label><input type="radio" name="Main" value="Violet"></input>Violet</label><br/>
 <label><input type="radio" name="Main" value="Purple"></input>Purple</label><br/>
 <label><input type="radio" name="Main" value="Brown"></input>Brown</label><br/>
 <label><input type="radio" name="Main" value="Black"></input>Black</label><br/>
@@ -61,7 +74,7 @@ window.onload=function(){
 <label><input type="radio" name="Hover" value="Green"></input>Green</label><br/>
 <label><input type="radio" name="Hover" value="Blue"></input>Blue</label><br/>
 <label><input type="radio" name="Hover" value="Indigo"></input>Indigo</label><br/>
-<label title="Actually pink, but the standard says this is violet."><input type="radio" name="Hover" value="Violet"></input>Violet</label><br/>
+<label><input type="radio" name="Hover" value="Violet"></input>Violet</label><br/>
 <label><input type="radio" name="Hover" value="Purple"></input>Purple</label><br/>
 <label><input type="radio" name="Hover" value="Brown"></input>Brown</label><br/>
 <label><input type="radio" name="Hover" value="Black"></input>Black</label><br/>
@@ -73,10 +86,30 @@ window.onload=function(){
 <label><input type="radio" name="Hover" value="Light-Gray"></input>Light-Gray</label><br/>
 <label><input type="radio" name="Hover" value="White"></input>White</label>
 </td>
+<td>
+<label><input type="radio" name="Active" value="Null" checked="true"></input>Null</label><br/>
+<label><input type="radio" name="Active" value="Red"></input>Red</label><br/>
+<label><input type="radio" name="Active" value="Orange"></input>Orange</label><br/>
+<label><input type="radio" name="Active" value="Yellow"></input>Yellow</label><br/>
+<label><input type="radio" name="Active" value="Green"></input>Green</label><br/>
+<label><input type="radio" name="Active" value="Blue"></input>Blue</label><br/>
+<label><input type="radio" name="Active" value="Indigo"></input>Indigo</label><br/>
+<label><input type="radio" name="Active" value="Violet"></input>Violet</label><br/>
+<label><input type="radio" name="Active" value="Purple"></input>Purple</label><br/>
+<label><input type="radio" name="Active" value="Brown"></input>Brown</label><br/>
+<label><input type="radio" name="Active" value="Black"></input>Black</label><br/>
+<label><input type="radio" name="Active" value="Dark-Grey"></input>Dark-Grey</label><br/>
+<label><input type="radio" name="Active" value="Grey"></input>Grey</label><br/>
+<label><input type="radio" name="Active" value="Light-Grey"></input>Light-Grey</label><br/>
+<label><input type="radio" name="Active" value="Dark-Gray"></input>Dark-Gray</label><br/>
+<label><input type="radio" name="Active" value="Gray"></input>Gray</label><br/>
+<label><input type="radio" name="Active" value="Light-Gray"></input>Light-Gray</label><br/>
+<label><input type="radio" name="Active" value="White"></input>White</label>
+</td>
 </tr>
 </table>
 <label><input type="checkbox" id="Nwidth" checked="true"></input>Full Width</label><br/>
-<label><input type="checkbox" id="Nactive" checked="true"></input>Active Darken</label><br/>
+<label><input type="checkbox" id="Nactive" checked="true"></input>:active Darken/Lighten</label><br/>
 <button class="JWButton" id="Result">Result</button>
 <h2>class="<span id="Class">JWButton</span>"</h2>
 </body>
